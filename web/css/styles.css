@@ -1,0 +1,96 @@
+/* Font  
+========================================================================================*/	
+body { -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; color:#6a6a6a; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:21px; }
+h1, h2, h3, h4, h5, h6, .copyRight { font-family: 'Tinos', serif, Arial, Helvetica, sans-serif; }
+nav { font-family: 'Nova Slim', cursive, serif, Arial, Helvetica, sans-serif; }
+
+/* End Font  
+========================================================================================*/
+
+/* Branding  
+========================================================================================*/
+body { background:#e1e1e1 url(../img/body-bg.png) repeat 0 0; padding:45px 0 0 0  }
+.bg { background:url(../img/shadow.png) no-repeat center bottom; width:1000px; margin:0 auto; padding-bottom:32px;}
+.pageWidth { background:#ffffff;  width:1000px; margin:0 auto; box-shadow:0 0 10px rgba(0,0,0,0.50);}
+
+#logo { color:#585858; text-align:center; font-size:51px; line-height:58px; text-transform:uppercase; margin-bottom:25px; text-transform:lowercase; text-shadow:0 1px 0 rgba(0,0,0,0.40);	} 
+
+#header { /*background:#F00;*/ padding:32px 0 0 0; }
+header, nav, section, footer { display:block;}
+/* END Branding  
+========================================================================================*/
+
+/* HEADING   
+========================================================================================*/
+
+h1, h2, h3, h4, h5 { color:#6a6257; text-transform:capitalize; }
+h1 { font-size:60px; line-height:68px; }
+h2 { font-size:30px; line-height:35px; margin-bottom:12px; }
+h3 { font-size:24px; line-height:30px; margin-bottom:10px; }
+h4 { font-size:18px; line-height:25px; margin-bottom:8px; }
+h5 { font-size:14px; line-height:15px; margin-bottom:5px; }
+h6 { font-size:8px; line-height:10px; margin-bottom:5px; }
+
+/* END  HEADING   
+========================================================================================*/
+
+/* Links AND Button   
+========================================================================================*/
+a:focus{ outline:none;}
+a { text-decoration:none; color:#9d9d9d }
+a:hover { color:#393939 }
+
+/* Links AND Button   
+========================================================================================*/
+
+/* Main Navigation 
+========================================================================================*/
+
+nav { font-size:14px; line-height:20px; margin-bottom:21px; text-align:center }
+nav ul { border:solid 1px #e8e8e8; border-width:1px 0 1px 0; padding:5px 0; margin:0 22px; }
+nav li { text-align:center; display:inline; text-align:center; margin:0 15px }
+nav li a { color:#585858; display:inline-block; padding:2px 23px 0 27px; line-height:28px; }
+nav li a:hover, nav li.active a { background:#f0eded; color:#585858;  }
+nav li:first-child { background:none; }
+	
+#menu { display:none; color:#585858; font-size:16px; background:url(../img/menu-img.png) no-repeat 97% 15px; padding:15px 0 15px 3%; text-align:left;  }
+
+/* End Navigation 
+========================================================================================*/
+#banner { text-align:center; margin-bottom:21px; }
+#banner img { background-size:cover; } 
+
+#container { padding:0 0 25px 0; } 
+article ul li { padding-left:15px;}
+article ul li:before{ content:'B'; text-indent:-5px; font-weight:bold; font-size:60px; height:5px; line-height:5px; width:5px; border-radius:10px;  vertical-align:middle; float:left;  margin-left:-15px; overflow:hidden; margin-top:8px; }
+article ol { margin-left:15px; }
+article ol li { list-style:decimal; }
+
+.pageControl{ padding:0 20px;
+ transform: translate(0px, 0px);
+-webkit-transform: translate(0px, 0px);
+-moz-transform: translate(0px, 0px);
+-o-transform: translate(0px, 0px);
+-ms-transform: translate(0px, 0px);}
+
+.activepage .pageControl{transform: translate(-1000px, 0px);
+-webkit-transform: translate(-1000px, 0px);
+-moz-transform: translate(-1000px, 0px);
+-o-transform: translate(-1000px, 0px);
+-ms-transform: translate(-1000px, 0px);
+
+}
+
+/* FORM 
+========================================================================================*/
+fieldset {}
+/* Footer
+===============================================*/
+#footer { text-align:center; padding:20px 0 20px 0; text-transform:capitalize; background:#70747a; color:#ffffff; }
+.copyRight { opacity:0.70; font-weight:bold; }
+/* transition
+===============================================*/
+#wrapper, #widecolumn, aside, nav li{transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;}
+
+
+

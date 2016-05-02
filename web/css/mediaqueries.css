@@ -1,0 +1,40 @@
+@media only screen and (max-width: 900px), only screen and (min-width: 768px) and (max-width: 1023px) {
+body { min-width: auto; }
+.pageWidth { width:auto; padding:0 }
+.bg { width:auto; background-size:contain; padding-bottom:24px; margin:0 15px }
+
+h2 { font-size:26px; line-height:30px; margin-bottom:5px;}
+nav li a { padding:0 24px;} 
+#banner { padding:0 20px }  
+
+}
+
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 480px), only screen and (max-width: 767px) {
+body { min-width: auto; padding:50px 0 0 0 }
+.pageWidth { width:auto; }
+.bg { background:none; width:auto; padding:0; margin:0 10px }
+
+#logo { text-align:center; font-size:40px; line-height:48px; display:block; margin-bottom:15px;  }
+#header { padding:15px 0 0}
+
+h2 { font-size:24px; line-height:30px; }
+#menu { display:block; }
+nav { border:solid 1px #e8e8e8; border-width:1px 0; margin:0 10px 21px; text-align:center; font-size:12px; }
+nav ul { border:none; margin:0; padding-bottom:0; }
+nav li { border-top:solid 1px #e8e8e8; display:block; margin:0; border-radius:0;}
+nav li a { width:100%; height:auto; border-radius:0; line-height:35px; padding:0 !important }
+nav li:first-child { border-top:0}
+#banner { padding:0 10px }  
+
+#container { padding-bottom:10px;}
+.pageControl { padding:0 10px;}
+
+#footer { text-align:center; padding:15px 0; }
+
+}
+
+
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
+
+}
