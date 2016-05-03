@@ -18,7 +18,7 @@ $conn = new PDO('mysql:host='.$host .';dbname='.$dbname.'', $username, $password
 
 
 
- $conexion = mysql_connect($host, $username, $password);
- mysql_select_db($dbname);
- mysql_query("SET NAMES 'utf8'");
+ //$conexion = mysql_connect($host, $username, $password);
+ //mysql_select_db($dbname);
+ //mysql_query("SET NAMES 'utf8'");
 ?>
