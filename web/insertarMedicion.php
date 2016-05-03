@@ -23,11 +23,13 @@
    
         $departamento= $IdDepto [0];
         $municipio=$IdMuni[0] ;
-       
-       $resultado = mysql_query(' INSERT INTO mediciones (IdMediciones, FecMediciones, ValMediciones, IdDepto, IdMuni, DesUbi, Latitud, Longitud, IdUsuarios) VALUES (NULL,"'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', '.$DesUbi.', '.$Latitud.', '.$Longitud.', 1)',$conexion);
 
-		//$resultado = mysql_query("CALL 	insertMediciones('$FecMediciones', '$ValMediciones', '$departamento', '$municipio', '$DesUbi', '$Latitud', '$Longitud', '1')", $conexion);
-		if ($resultado) {
+
+         $stmt=$conn->prepare(' INSERT INTO mediciones (IdMediciones, FecMediciones, ValMediciones, IdDepto, IdMuni, DesUbi, Latitud, Longitud, IdUsuarios) VALUES (NULL,"'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', '.$DesUbi.', '.$Latitud.', '.$Longitud.', 1)');
+
+          $count=$stmt->execute();
+          
+		if ($count==1) {
 			$_SESSION['r']=" el  proceso  fue exitosamnete .................................";
 			header('Location: /index.php');
 

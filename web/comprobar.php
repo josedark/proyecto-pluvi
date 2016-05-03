@@ -5,9 +5,9 @@ $user = $_POST['b'];
 if(!empty($user))
 
  {
-            $result = mysql_query("SELECT * FROM usuarios WHERE CorreoUsuarios = '".$user."'",$conexion);
-             
-            if ($fila=mysql_fetch_array($result))
+            $stmt=$conn->prepare("SELECT * FROM usuarios WHERE CorreoUsuarios = '".$user."'");
+             $count=$stmt->execute();                  
+            if ($fila = $stmt->fetch())
             	{
 
             		 //echo '<span style="font-weight:bold;color:green;">Disponible '.$user.'</span>';

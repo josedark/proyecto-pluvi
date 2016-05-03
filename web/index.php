@@ -190,7 +190,7 @@ Con lo anterior profesionales como ingenieros civiles y arquitectos podrán empl
         <div class="pageContainer" style="display: none;"><h2>Consulta de datos recopilados</h2>
 <p>Puedes consultar la información almacenada, y recopilada por los cooperantes</p>
  
- pa
+ 
 
  <script type="text/javascript">
      $(document).ready(function(){
@@ -290,9 +290,10 @@ if( indicemuni == null || indicemuni == 0 ) {
 <SELECT name="selectordepartamentos[]" required  id="de"  >
 <option selected value="-1">Seleccione una Opción...</option>
 <?php
+ $stmt=$conn->prepare( "SELECT * FROM departamentos");
+ $stmt->execute();
 
-$result = mysql_query("SELECT * FROM departamentos",$conexion);
-while($row = mysql_fetch_array($result))
+while( $row = $stmt->fetch())
 {
 echo'<OPTION VALUE="'.$row['IdDepto'].'">'.$row['Departamento'].'</OPTION>';
 } 
@@ -306,11 +307,12 @@ echo'<OPTION VALUE="'.$row['IdDepto'].'">'.$row['Departamento'].'</OPTION>';
  <SELECT name="selectormunicipios[]" id="muni"  required >
 <option selected value="-1">Seleccione una Opción...</option>
 <?php
-include("enlacebd.php");
-$result = mysql_query("SELECT * FROM municipios ",$conexion);
-while($row = mysql_fetch_array($result))
+ $stmt=$conn->prepare( "SELECT * FROM municipios ");
+ $stmt->execute();
+
+while($row = $stmt->fetch())
 {
-echo'<OPTION VALUE="'.$row['IdMuni'].'">'.utf8_encode($row['Municipio']).'</OPTION>';
+echo'<OPTION VALUE="'.$row['IdMuni'].'">'.utf8_encode($row['nombreMunicipio']).'</OPTION>';
 } 
 ?>
 </SELECT>
