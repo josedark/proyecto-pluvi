@@ -4,7 +4,7 @@
  $username = 'nxlaeioyrwqiqr';
  $password = 'Mv3CDNF4Eu3pHQdToGFZJl3Q6S';
   try {
-$conn = new PDO('mysql:host='.$host .';dbname='.$dbname.'', $username, $password );
+$conn = new PDO('pgsql:host='.$host .';dbname='.$dbname.'', $username, $password );
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
