@@ -9,11 +9,21 @@
     //$result = mysql_query("SELECT * FROM `mediciones`INNER JOIN municipios on mediciones.IdMuni=municipios.IdMuni
       //                     INNER  JOIN departamentos on mediciones.IdDepto=departamentos.IdDepto",$conexion);
    
- $stmt=$conn->prepare("SELECT * FROM mediciones ");
- $stmt->execute();
+ 
 
 $i=0;
- phpinfo();
+try {
+$stmt=$conn->prepare("SELECT * FROM mediciones ");
+ $stmt->execute();
+ echo json_encode($stmt);
+
+}catch(PDOException $e){
+
+    echo "ERROR: " . $e->getMessage();
+
+}
+
+
 
 
 
