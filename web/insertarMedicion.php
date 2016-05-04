@@ -10,6 +10,12 @@
         echo $_POST['LonMedicion'];
        echo $a[0];
        echo $b[1];
+       
+       if (isset($_POST['FecMedicion']))
+       {
+       	 echo "aqio";
+       	
+       }
 
 	
 	
