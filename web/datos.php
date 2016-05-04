@@ -22,11 +22,11 @@ $respuesta=null;
         $IdMediciones =$fila['IdMediciones'];
         $FecMediciones =$fila['FecMediciones'];
         $ValMediciones =$fila['ValMediciones'];
-        $IdDepto =$fila['Departamento'];
-        $Municip= $fila['nombreMunicipio'];
-        $DesUbi =$fila['DesUbi'];
-        $Latitud =$fila['Latitud'];
-        $Longitud =$fila['Longitud'];
+        $IdDepto = "hola";  //$fila['Departamento'];
+        $Municip="hola";    //$fila['nombreMunicipio'];
+        $DesUbi ="hola";//$fila['DesUbi'];
+        $Latitud = "hola";   //$fila['Latitud'];
+        $Longitud = "hola"; //$fila['Longitud'];
 
         $munici=utf8_encode($Municip);
         
