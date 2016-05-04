@@ -25,7 +25,7 @@
         $municipio=$IdMuni[0] ;
 
 
-         $stmt=$conn->prepare(' INSERT INTO mediciones (IdMediciones, FecMediciones, ValMediciones, IdDepto, IdMuni, DesUbi, Latitud, Longitud, IdUsuarios) VALUES (NULL,"'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', '.$DesUbi.', '.$Latitud.', '.$Longitud.', 1)');
+         $stmt=$conn->prepare(' INSERT INTO mediciones (idmediciones, fecmediciones, valMediciones, iddepto, idmuni, desUbi, latitud, longitud, idUsuarios) VALUES (NULL,"'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', '.$DesUbi.', '.$Latitud.', '.$Longitud.', 1)');
 
           $count=$stmt->execute();
           
@@ -37,7 +37,7 @@
 		
 
 		} else {
-			$_SESSION['r']= " error" .mysql_error();
+			$_SESSION['r']= " error" ;
 			header('Location: /index.php');
 			
 			
@@ -51,7 +51,7 @@
 	else
 	{
        
-      $_SESSION['resultado']="error".mysql_error();
+      $_SESSION['resultado']="error";
       header('Location: /index.php');
      
 		
