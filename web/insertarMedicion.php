@@ -54,6 +54,20 @@
       //$_SESSION['resultado']="error";
       //header('Location: /index.php');
       echo " aqui estoy";
+      try {
+       $stmt=$conn->prepare('INSERT INTO mediciones (idmediciones, fecmediciones, valMediciones, iddepto, idmuni, desUbi, latitud, longitud, idUsuarios) VALUES (NULL, '2015-11-03', '23', '08', '801', 'jose', '23', '34', '1')';
+       $stmt->execute();
+
+    
+
+}catch(PDOException $e){
+
+    echo "ERROR: " . $e->getMessage();
+
+}
+
+      
+      
      
 		
 		
