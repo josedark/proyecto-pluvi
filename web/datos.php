@@ -14,8 +14,10 @@
 
 $i=0;
  echo hola;
-      
-    
+ 
+ $fila = $stmt->fetch();
+ 
+ echo $fila['IdMediciones'];
 
 
 
