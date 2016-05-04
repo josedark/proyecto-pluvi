@@ -51,8 +51,9 @@
 	else
 	{
        
-      $_SESSION['resultado']="error";
-      header('Location: /index.php');
+      //$_SESSION['resultado']="error";
+      //header('Location: /index.php');
+      echo " aqui estoy";
      
 		
 		
