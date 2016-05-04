@@ -295,7 +295,7 @@ if( indicemuni == null || indicemuni == 0 ) {
 
 while( $row = $stmt->fetch())
 {
-echo'<OPTION VALUE="'.$row['IdDepto'].'">'.$row['Departamento'].'</OPTION>';
+echo'<OPTION VALUE="'.$row[0].'">'.$row[1].'</OPTION>';
 } 
 ?>
 </SELECT>
@@ -312,7 +312,7 @@ echo'<OPTION VALUE="'.$row['IdDepto'].'">'.$row['Departamento'].'</OPTION>';
 
 while($row = $stmt->fetch())
 {
-echo'<OPTION VALUE="'.$row['IdMuni'].'">'.utf8_encode($row['nombreMunicipio']).'</OPTION>';
+echo'<OPTION VALUE="'.$row[0].'">'.utf8_encode($row[1]).'</OPTION>';
 } 
 ?>
 </SELECT>
