@@ -1,8 +1,8 @@
 <?php
-	$host = 'ec2-54-225-102-235.compute-1.amazonaws.com';
- $dbname = 'db0iq2atr12u3q';
- $username = 'nxlaeioyrwqiqr';
- $password = 'Mv3CDNF4Eu3pHQdToGFZJl3Q6S';
+	$host ='ec2-54-225-102-235.compute-1.amazonaws.com';
+ $dbname ='db0iq2atr12u3q';
+ $username ='nxlaeioyrwqiqr';
+ $password ='Mv3CDNF4Eu3pHQdToGFZJl3Q6S';
   try {
 $conn = new PDO('pgsql:host='.$host .';dbname='.$dbname.'', $username, $password );
 
