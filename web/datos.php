@@ -29,6 +29,7 @@ $respuesta=null;
         $Longitud = "hola"; //$fila['Longitud'];
 
         $munici=utf8_encode($Municip);
+        echo ="hola";
         
         
 
