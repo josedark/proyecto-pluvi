@@ -13,7 +13,7 @@
 
 $i=0;
 try {
-$stmt=$conn->prepare("SELECT * FROM mediciones ");
+$stmt=$conn->prepare("SELECT * FROM mediciones INNER  JOIN departamentos on (mediciones.Iddepto = departamentos.Iddepto)");
  $stmt->execute();
  
  
