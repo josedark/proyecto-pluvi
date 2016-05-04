@@ -11,7 +11,7 @@
        echo $a[0];
        echo $b[1];
        
-       if (isset($_POST['FecMedicion']))
+       if (isset($_POST['FecMedicion'])and isset($_POST['ValMedicion'])and isset($_POST['selectordepartamentos'])and isset($_POST['selectormunicipios'])and isset($_POST['UbiMedicion']) and isset($_POST['LatMedicion'])and isset($_POST['LonMedicion']))
        {
        	 echo "aqio";
        	
