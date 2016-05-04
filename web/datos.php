@@ -17,10 +17,31 @@ $stmt=$conn->prepare("SELECT * FROM mediciones INNER JOIN municipios on (medicio
 ");
  $stmt->execute();
  
+$respuesta=null;
+ 
  
  while($fila = $stmt->fetch()){
-  echo json_encode($fila);
+  $IdMediciones =$fila['IdMediciones'];
+        $FecMediciones =$fila['FecMediciones'];
+        $ValMediciones =$fila['ValMediciones'];
+        $IdDepto =$fila['Departamento'];
+        $Municip= $fila['nombreMunicipio'];
+        $DesUbi =$fila['DesUbi'];
+        $Latitud =$fila['Latitud'];
+        $Longitud =$fila['Longitud'];
+
+        $munici=utf8_encode($Municip);
+        
+        
+
+        $respuesta->rows[$i]['cell']=array($IdMediciones,$FecMediciones,$ValMediciones,$IdDepto,$munici,$DesUbi,$Latitud ,$Latitud );
+        $i++;
 }
+
+echo json_encode($respuesta);
+
+
+
 }catch(PDOException $e){
 
     echo "ERROR: " . $e->getMessage();
