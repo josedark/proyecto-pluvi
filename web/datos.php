@@ -21,14 +21,14 @@ $respuesta=null;
  
  
  while($fila = $stmt->fetch()){
-  $IdMediciones =$fila['IdMediciones'];
-        $FecMediciones =$fila['FecMediciones'];
-        $ValMediciones =$fila['ValMediciones'];
-        $IdDepto =$fila['Departamento'];
-        $Municip= $fila['nombreMunicipio'];
-        $DesUbi =$fila['DesUbi'];
-        $Latitud =$fila['Latitud'];
-        $Longitud =$fila['Longitud'];
+  $IdMediciones =$fila[0];
+        $FecMediciones =$fila[1];
+        $ValMediciones =$fila[2];
+        $IdDepto =$fila[3];
+        $Municip= $fila[4];
+        $DesUbi =$fila[5];
+        $Latitud =$fila[6];
+        $Longitud =$fila[7];
 
         $munici=utf8_encode($Municip);
         
