@@ -15,9 +15,11 @@ $i=0;
 try {
 $stmt=$conn->prepare("SELECT * FROM mediciones ");
  $stmt->execute();
- $fila = $stmt->fetch();
+ 
+ 
+ while($fila = $stmt->fetch()){
   echo json_encode($fila);
-
+}
 }catch(PDOException $e){
 
     echo "ERROR: " . $e->getMessage();
