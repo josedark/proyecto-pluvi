@@ -29,10 +29,6 @@
         	error_reporting(E_ALL);
         	
 ini_set('display_startup_errors', 1);
-$stmt=$conn->prepare("SELECT * FROM mediciones INNER JOIN municipios on (mediciones.Idmuni=municipios.Idmuni) INNER  JOIN departamentos on (mediciones.Iddepto = departamentos.Iddepto);
-$stmt->execute();
-$fila = $stmt->fetch();
-echo json_encode($fila);
 
         	// phpinfo();
        // $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ('$FecMediciones','$ValMediciones', '$a','$b','$D','$Latitud', '$Longitud', 1)');
