@@ -13,7 +13,10 @@
          echo $_POST['LatMedicion']."-";
         echo $_POST['LonMedicion']."-";
        echo $a[0]."-";
-       echo $b[1]."-";
+       echo $b[0]."-";
+       
+        echo json_encode($a)."-";
+       echo json_encode($b)."-";
         $FecMediciones =$_POST['FecMedicion'];
         $ValMediciones =$_POST['ValMedicion'];
         $IdDepto =$_POST['selectordepartamentos'];
