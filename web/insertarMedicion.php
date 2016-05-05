@@ -18,12 +18,12 @@
         $ValMediciones =$_POST['ValMedicion'];
         $IdDepto =$_POST['selectordepartamentos'];
         $IdMuni =$_POST['selectormunicipios'];
-        $DesUbi =$_POST['UbiMedicion'];
+        $D=$_POST['UbiMedicion'];
         $Latitud =$_POST['LatMedicion'];
         $Longitud =$_POST['LonMedicion'];
        
         try {
-          $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ('.$FecMediciones.', '.$ValMediciones.', '.$a[0].', '.$b[0].', '.$DesUbi.', '.$Latitud.', '.$Longitud.', 1)');
+          $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ('.$FecMediciones.', '.$ValMediciones.', '.$a[0].', '.$b[0].','.$D.', '.$Latitud.', '.$Longitud.', 1)');
 
           $count=$stmt->execute();	
 
