@@ -15,7 +15,7 @@
        echo $a[0];
        echo $b[1];
         try {
-          $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desUbi, latitud, longitud, idusuarios) VALUES ("'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', "'.$DesUbi.'", '.$Latitud.', '.$Longitud.', 1)');
+          $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ("'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', "'.$DesUbi.'", '.$Latitud.', '.$Longitud.', 1)');
 
           $count=$stmt->execute();	
 
