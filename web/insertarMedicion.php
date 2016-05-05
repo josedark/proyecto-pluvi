@@ -1,7 +1,11 @@
 <?php
 	include("enlacebd.php");
 	
- echo $_POST['FecMedicion'];
+ 
+       
+       if (isset($_POST['FecMedicion'])and isset($_POST['ValMedicion'])and isset($_POST['selectordepartamentos'])and isset($_POST['selectormunicipios'])and isset($_POST['UbiMedicion']) and isset($_POST['LatMedicion'])and isset($_POST['LonMedicion']))
+       {
+       	 echo $_POST['FecMedicion'];
     echo $_POST['ValMedicion'];
         $a=$_POST['selectordepartamentos'];
         $b=$_POST['selectormunicipios'];
@@ -11,9 +15,14 @@
        echo $a[0];
        echo $b[1];
        
-       if (isset($_POST['FecMedicion'])and isset($_POST['ValMedicion'])and isset($_POST['selectordepartamentos'])and isset($_POST['selectormunicipios'])and isset($_POST['UbiMedicion']) and isset($_POST['LatMedicion'])and isset($_POST['LonMedicion']))
-       {
-       	 echo "aqio";
+       $stmt=$conn->prepare(' INSERT INTO mediciones (idmediciones, fecmediciones, valmediciones, iddepto, idmuni, desUbi, latitud, longitud, idusuarios) VALUES (NULL,"'.$FecMediciones.'", '.$ValMediciones.', '.$departamento.', '.$municipio.', '.$DesUbi.', '.$Latitud.', '.$Longitud.', 1)');
+
+          $count=$stmt->execute();
+       
+       
+       
+       
+       
        	
        }
 
