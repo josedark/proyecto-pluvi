@@ -16,13 +16,7 @@
        echo $b[1]."-";
        
         
-        $FecMediciones =$_POST['FecMedicion'];
-        $ValMediciones =$_POST['ValMedicion'];
-        $IdDepto =$_POST['selectordepartamentos'];
-        $IdMuni =$_POST['selectormunicipios'];
-        $D=$_POST['UbiMedicion'];
-        $Latitud =$_POST['LatMedicion'];
-        $Longitud =$_POST['LonMedicion'];
+      
        
         try {
        //   $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ('.$FecMediciones.', '.$ValMediciones.', '.$a[0].', '.$b[0].','.$D.', '.$Latitud.', '.$Longitud.', 1)');
