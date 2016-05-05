@@ -17,7 +17,7 @@
        $FecMediciones =$_POST['FecMedicion'];
         $ValMediciones =$_POST['ValMedicion'];
        
-        $DesUbi =$_POST['UbiMedicion'];
+        $D =$_POST['UbiMedicion'];
         $Latitud =$_POST['LatMedicion'];
         $Longitud =$_POST['LonMedicion'];
         
