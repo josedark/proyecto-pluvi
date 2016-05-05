@@ -23,7 +23,7 @@
         $Longitud =$_POST['LonMedicion'];
        
         try {
-          $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ("'.$FecMediciones.'", '.$ValMediciones.', '.$a.', '.$b.', "'.$DesUbi.'", '.$Latitud.', '.$Longitud.', 1)');
+          $stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ("'.$FecMediciones.'", '.$ValMediciones.', '.$a[0].', '.$b[0].', "'.$DesUbi.'", '.$Latitud.', '.$Longitud.', 1)');
 
           $count=$stmt->execute();	
 
