@@ -12,8 +12,8 @@
         echo $_POST['UbiMedicion']."-";
          echo $_POST['LatMedicion']."-";
         echo $_POST['LonMedicion']."-";
-       echo $a[0]."-";
-       echo $b[0]."-";
+       echo $a[1]."-";
+       echo $b[1]."-";
        
         
         $FecMediciones =$_POST['FecMedicion'];
