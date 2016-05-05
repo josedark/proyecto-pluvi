@@ -287,7 +287,7 @@ if( indicemuni == null || indicemuni == 0 ) {
 <tr>
 <td><label for="DepMedicion" class="depto" data-icon="d">Departamento donde se obtuvo la medición:</label></td>
 <td>
-<SELECT name="selectordepartamentos[]" required  id="de"  >
+<SELECT name="selectordepartamentos" required  id="de"  >
 <option selected value="-1">Seleccione una Opción...</option>
 <?php
  $stmt=$conn->prepare( "SELECT * FROM departamentos");
@@ -304,7 +304,7 @@ echo'<OPTION VALUE="'.$row[0].'">'.$row[1].'</OPTION>';
 <tr>
 <td><label for="MunMedicion" class="valor" data-icon="m">Municipio donde se obtuvo la medición:</label></td>
 <td>
- <SELECT name="selectormunicipios[]" id="muni"  required >
+ <SELECT name="selectormunicipios" id="muni"  required >
 <option selected value="-1">Seleccione una Opción...</option>
 <?php
  $stmt=$conn->prepare( "SELECT * FROM municipios ");
