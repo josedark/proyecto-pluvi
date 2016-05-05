@@ -24,6 +24,8 @@
       
        
         try {
+        	
+        	ini_set('display_errors', 1);
         	 phpinfo();
          //$stmt=$conn->prepare(' INSERT INTO mediciones (fecmediciones, valmediciones, iddepto, idmuni, desubi, latitud, longitud, idusuarios) VALUES ('$FecMediciones','$ValMediciones', '$a','$b','$D','$Latitud', '$Longitud', 1)');
 
