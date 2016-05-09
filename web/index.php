@@ -33,7 +33,7 @@ body{  background-image:url("img/body-bg.png"); background-color:rgb(225, 225, 2
 <body>
 
 
-
+<?php  phpinfo(); ?>
 
 
 <div class="bg">
